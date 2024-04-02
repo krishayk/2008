@@ -1,0 +1,541 @@
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* ... existing styles ... */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* ... other styles ... */
+}
+
+.navbar .nav-links {
+    display: flex;
+}
+
+/* Hide the links by default and only display them if they have a .visible class */
+.navbar a#signupLink,
+.navbar a#loginLink,
+.navbar a#accountsLink,
+.navbar #userArea {
+    display: none;
+}
+
+/* When .visible class is added, display the link */
+.navbar a.visible {
+    display: inline;
+}
+
+/* Style for the username and logout dropdown */
+#userArea {
+    position: relative;
+    display: inline-block;
+}
+
+#userArea.visible {
+    display: inline-block;
+}
+
+#accountName {
+    display: block; /* or inline-block */
+    text-align: center;
+    /* ... any additional styling ... */
+}
+
+#userArea {
+    position: relative;
+    /* ... other styles ... */
+}
+#userArea {
+    position: relative; /* Position the dropdown absolutely inside this relative container */
+    display: none; /* Hide by default, show when logged in */
+}
+
+#userArea.visible {
+    display: block; /* Show when user is logged in */
+}
+/* style.css */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* User area and dropdown menu */
+#userArea {
+    display: none; /* Initially hidden */
+    float: right; /* Align to the right */
+    position: relative; /* For absolute positioning of the dropdown */
+}
+
+#userArea.visible {
+    display: block; /* Show when user is logged in */
+}
+
+#userDropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* Existing CSS rules... */
+
+/* User area and dropdown menu styles */
+#userArea {
+    display: none; /* Initially hidden */
+    float: right; /* Align to the right */
+    position: relative; /* For absolute positioning of the dropdown */
+    padding: 10px;
+    margin-right: 20px; /* Adjust as needed to prevent cutoff */
+    background-color: white; /* White background for the username box */
+    border-radius: 25px; /* Rounded edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+#userArea.visible {
+    display: block; /* Show when user is logged in */
+}
+
+#userDropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    right: 0;
+    top: 100%; /* Align below the userArea box */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px; /* Slight rounding of edges for the dropdown */
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#userArea {
+    position: relative;
+}
+
+#userArea {
+    position: relative;
+}
+
+#userDropdown {
+    position: absolute;
+    right: 0;
+    top: 100%; /* Aligns directly below the userArea */
+    background-color: #f9f9f9;
+    display: none;
+    /* Rest of your styles */
+}
+
+#userDropdown {
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    display: none;
+    /* ... other styles ... */
+}
+
+/* Additional CSS to ensure the dropdown aligns properly */
+#userDropdown {
+    margin-top: 0;
+    border-top: none;
+}
+
+#userArea:hover #userDropdown,
+#userDropdown:hover {
+    display: block; /* Keep the dropdown visible on hover */
+}
+
+/* ... rest of your styles ... */
+
+
+#userArea:hover #userDropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Post and form styles */
+
+/* ... rest of your styles ... */
+
+/* Add any custom styles or overrides you've mentioned */
+
+
+#userDropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    right: 0;
+    top: 100%; /* Position below the user area */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    border-radius: 5px;
+    padding: 12px 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#userArea:hover #userDropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+#userDropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    /* ... other styles ... */
+}
+
+#userArea:hover #userDropdown {
+    display: block;
+}
+
+
+#userDropdown {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#userArea:hover #userDropdown {
+    display: block;
+}
+
+/* ... existing styles ... */
+
+
+/* Add this at the top of your style.css file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* ... rest of your style.css ... */
+
+.login-container {
+    background-color: #fff;
+    padding: 50px; /* More padding for a larger box */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 450px; /* Increased width for a larger box */
+    margin: auto;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif; /* Using a more standard font */
+    font-size: 36px; /* Slightly reduced font size for a cleaner look */
+    font-weight: 700; /* Bold font weight for the header */
+    color: #333; /* Standard text color */
+}
+
+/* ... rest of your style.css ... */
+
+
+/* ... rest of your style.css ... */
+
+/* ... rest of your style.css ... */
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 400px; /* Increased width */
+    margin: auto;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-family: 'Fredoka One', cursive; /* Apply the Fredoka One font */
+    font-size: 40px; /* Larger font size */
+    color: #000; /* Solid black color for better readability */
+}
+
+.login-container h1 span.ura {
+    background: -webkit-linear-gradient(0deg, #000, #000); /* Black for 'Pact' */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff; /* White outline for 'ura' */
+}
+
+/* ... rest of your style.css ... */
+
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    font-size: 32px; /* Adjust size as needed */
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for a "lifted" effect */
+}
+
+.login-container h1 span.pact {
+    color: #000; /* Black text */
+}
+
+.login-container h1 span.ura {
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 2px #000; /* Black outline effect */
+}
+
+/* ... rest of your style.css ... */
+
+
+.navbar {
+    background-color: #007bff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover, .navbar a:focus {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+.form, .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.post, .account {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #007bff;
+}
+
+.post-content, .account p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    margin-left: 20px;
+}
+
+#deleteConfirmation {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#userArea:hover #userDropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+#userDropdown {
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 5px; /* Adjust spacing as needed */
+    background-color: #f9f9f9; /* Light grey, adjust as needed */
+    border-radius: 5px; /* Rounded corners for the dropdown */
+}
+
+#userDropdown button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: blue; /* Style as needed */
+}
+
+/* Add this for the login and signup page design */
+.login-body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('your-background-image-path.jpg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.signup-prompt {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.signup-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+/* ... rest of your style.css ... */
+
+.login-prompt,
+.signup-prompt {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.login-prompt a,
+.signup-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-prompt a:hover,
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px; /* Increased width */
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-family: 'Helvetica Neue', sans-serif; /* Updated font */
+    font-size: 24px; /* Larger font size */
+    color: #333;
+}
+
+.login-container h1 span.pact {
+    color: #000; /* Black text */
+}
+
+.login-container h1 span.ura {
+    color: transparent;
+    -webkit-text-stroke: 1px #000; /* Black outline */
+}
+
+.login-container h1 span.back {
+    color: #000; /* Black text */
+}
+
+.login-container h1 span.welcome {
+    color: transparent;
+    -webkit-text-stroke: 1px #000; /* Black outline */
+}
+/* ... rest of your style.css ... */
